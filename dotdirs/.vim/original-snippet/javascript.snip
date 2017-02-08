@@ -1,0 +1,18 @@
+snippet lmd
+options word
+  (function() {
+    ${0:TARGET}
+  })();
+
+snippet time
+options word
+  console.time('${1}');
+  console.timeEnd('$1');
+
+snippet log
+options word
+  console.log('$1 : ', ${1:obj});
+
+snippet logt
+options word
+  console.log('${0:TARGET}');

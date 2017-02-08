@@ -1,0 +1,2 @@
+#!/bin/bash
+gvimdiff -fR "$2" "$5"

@@ -1,0 +1,57 @@
+snippet set
+options word
+  <c:set var="${1:#:name}" value="${2:#:value}" />
+
+snippet sets
+options word
+  <c:set var="${1:#:name}">${2:#:value}</c:set>
+
+snippet if
+options word
+  <c:if test="${1:#:test}">${0:TARGET}</c:if>
+
+snippet ifb
+options head
+  <c:if test="${1:#:test}">
+    ${0:TARGET}
+  </c:if>
+
+snippet choose
+options head
+  <c:choose>
+  <c:when test="${1:#:test}">
+    ${0:TARGET}
+  </c:when>
+  <c:otherwise>
+  </c:otherwise>
+  </c:choose>
+
+snippet each
+options head
+  <c:forEach var="${2:#:item}" items="${1:#:items}" varStatus="${3:$2Status}">
+    ${0:TARGET}
+  </c:forEach>
+
+snippet $
+options word
+  ${${1:var}}
+
+snippet h
+options word
+  ${f:h(${1:var})}
+
+snippet url
+options word
+  ${f:url('${1:url}')}
+
+snippet %--
+options word
+  <%-- ${0:TARGET} --%>
+
+snippet bom
+options word
+  <bo:message key="${2:property-key}" bundle="${1:bundle-name}" />
+
+snippet boma
+options word
+  <bo:message key="${2:property-key}" arg0="${3:argument}" bundle="${1:bundle-name}" />

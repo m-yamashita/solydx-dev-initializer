@@ -1,0 +1,8 @@
+[diff]
+	external = git-diff-wrapper
+[pager]
+	diff = 
+[core]
+	editor = vim
+[push]
+	default = upstream
