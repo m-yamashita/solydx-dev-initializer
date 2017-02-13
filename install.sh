@@ -54,8 +54,11 @@ set -vxeu
 #
 ################################################################################
 
-echo '最初にsudoのためのパスワードを入力します。'
+# 最初にsudoのためのパスワードを入力します。
 sudo ls > /dev/null
+
+# Update repository
+sudo apt-get update
 
 # Create user bin directory.
 mkdir -p ~/bin
@@ -80,6 +83,9 @@ mkdir -p ~/bin
 
 # wmctrl setting
 ./modules/wmctrl.sh
+
+# arandr install
+./modules/arandr.sh
 
 # Ricty install
 ./modules/ricty.sh
@@ -110,6 +116,9 @@ source ./resources/env-settings.sh
 
 # dein.vim install
 ./modules/vim-dein.sh
+
+# Atom install
+./modules/atom.sh
 
 # aws-cli install
 ./modules/awscli.sh
