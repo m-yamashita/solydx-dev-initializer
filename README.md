@@ -70,7 +70,7 @@ sudo gpasswd -a $(whoami) vboxsf
 
 1. Vimを起動
 2. `:call dein#install()` を実行し、プラグインをインストール
-    
+
 ### (Optional) GoogleChrome等各種ブラウザのインストール
 
 プリインストールされているFirefox等から普通に検索してインストールすれば良い
@@ -81,7 +81,7 @@ sudo gpasswd -a $(whoami) vboxsf
 
 ```bash
 wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/autokey/autokey-0.90.4.tar.gz
-tar zxvf autokey-0.90.4.tar.gz
+tar xvf autokey-0.90.4.tar.gz
 cd autokey-0.90.4
 sudo python setup.py install
 sudo apt-get install python-xlib python-pyinotify
